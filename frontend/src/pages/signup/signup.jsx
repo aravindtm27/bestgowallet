@@ -11,7 +11,6 @@ const Signup = () => {
   const[lastname,setLastname] = useState("");
   const[password,setPassword] = useState("");
 
-  console.log(PORT);
 
   
 async function handleSignup(){
