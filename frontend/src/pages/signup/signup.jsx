@@ -17,7 +17,7 @@ const Signup = () => {
   
 async function handleSignup(){
   try{
-    const res = await axios.post("http://localhost:4000/api/v1/user/signup",{
+    const res = await axios.post("https://bestgowallet.vercel.app/api/v1/user/signup",{
       firstName:firstname,
       lastName:lastname,
       username:username,

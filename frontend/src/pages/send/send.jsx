@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 
   async function handleSend(){
     try{
-       const res =  await axios.post("http://localhost:4000/api/v1/account/transfer",{to:username, amt:amt},{
+       const res =  await axios.post("https://bestgowallet.vercel.app/api/v1/account/transfer",{to:username, amt:amt},{
         headers: {Authorization : `Bearer ${jwtToken}`}
        });
        alert("transaction successfull");

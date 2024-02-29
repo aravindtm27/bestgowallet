@@ -23,7 +23,7 @@ function Dashboard() {
   const jwtToken = localStorage.getItem("token");
   
   try{
-    axios.get('http://localhost:4000/api/v1/account/balance',{ headers: {Authorization : `Bearer ${jwtToken}`}})
+    axios.get('https://bestgowallet.vercel.app/api/v1/account/balance',{ headers: {Authorization : `Bearer ${jwtToken}`}})
   .then(function(res){
     if(res.status===403||res.status===404){
       navigate("/signin")
@@ -39,7 +39,7 @@ function Dashboard() {
   
 
   function handleSearch(){
-    axios.get('http://localhost:4000/api/v1/wallet/users',{ headers: {search : searchValue}})
+    axios.get('https://bestgowallet.vercel.app/api/v1/wallet/users',{ headers: {search : searchValue}})
     .then(function(res){
       setUserSearch(res.data.user);
       console.log(userSearch);
