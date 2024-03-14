@@ -47,7 +47,7 @@ function gotoSignin(){
         <Input value="Lastname" number={3}/>
         <Input value="Lastname" number={3}/> */}
         <div className='justify-center items-center ml-9'>
-            <h3 className='mt-4 font-semibold text-md'>Username</h3>
+            <h3 className='mt-4 font-semibold text-md'>Email</h3>
             <input className='mt-1 bg-transparent text-blue-gray-700 h-9 w-11/12 mr-7 outline-1 border-2 border-zinc-400 rounded-md p-2' placeholder="username" value={username} onChange={(e)=>setUsername(e.target.value)}/>
         </div>
         <div className='justify-center items-center ml-9'>
@@ -59,7 +59,8 @@ function gotoSignin(){
             <input className='mt-1 bg-transparent text-blue-gray-700 h-9 w-11/12 mr-7 outline-1 border-2 border-zinc-400 rounded-md p-2' placeholder="Lastname" value={lastname} onChange={(e)=>setLastname(e.target.value)}/>
         </div>
         <div className='justify-center items-center ml-9'>
-            <h3 className='mt-4 font-semibold text-md'>Password</h3>
+            <h3 className='mt-4 font-semibold text-md'>Password 
+            (Min length:10, 1 UpperCase, 1 LowerCase, 1 SpecialChar and 1 number)</h3>
             <input className='mt-1 bg-transparent text-blue-gray-700 h-9 w-11/12 mr-7 outline-1 border-2 border-zinc-400 rounded-md p-2' type="password" placeholder="Password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
         </div>
         <div onClick={handleSignup} className='flex items-center justify-center mt-7 h-10 bg-slate-800 w-4/6 rounded-lg ml-auto mr-auto text-slate-100 hover:bg-slate-100 hover:text-slate-800 transition ease-in-out hover:border-2 border-slate-800 cursor-pointer'>
